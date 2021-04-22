@@ -1,7 +1,7 @@
 public class cbv{
 public static void(String[] arge){
   inft a = 10 . b = 15;
-  system.out.println(" 傳直呼叫\t a =" + a + "\t b =" +b);
+  system.out.println(" 傳直呼叫前\t a =" + a + "\t b =" +b);
   byVal(a,b);
   system.out.println("傳直呼叫後\t a =" + a + "\t b =" +b);
  }
@@ -13,3 +13,27 @@ public static void(String[] arge){
  system.out.println(" 傳直呼叫中\t x = " + x + "\t y= " +y);
  {
  {
+
+
+
+class obj {
+  int a,b ;
+   obj() {
+    a = 10;
+    b = 15;
+    }
+  }
+public class 123{
+  public static void main(String[] args){
+    Obj obj = new obj ();
+    system.out.println("參考呼叫前 \t a= " + obj.a + "\t b= "+obj.b );
+    byRef(obj);
+    System.out.println("參考呼叫後\t a= " + obj.a + "\t b= "+obj.b );
+    }
+  static void byRef (obj p){
+    int t;
+    t = p.a;
+    p.a= p.b;
+    p.b - t;
+    }
+    }

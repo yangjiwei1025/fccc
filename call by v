@@ -1,0 +1,15 @@
+public class cbv{
+public static void(String[] arge){
+  inft a = 10 . b = 15;
+  system.out.println(" 傳直呼叫\t a =" + a + "\t b =" +b);
+  byVal(a,b);
+  system.out.println("傳直呼叫後\t a =" + a + "\t b =" +b);
+ }
+ static void byVal(int x, int y){
+ int t ;
+ t = x;
+ x = y;
+ y = t;
+ system.out.println(" 傳直呼叫中\t x = " + x + "\t y= " +y);
+ {
+ {
